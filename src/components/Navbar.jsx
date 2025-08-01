@@ -16,7 +16,7 @@ const Navbar = () => {
             <span className="text-gray-700 font-medium">Email:</span> info@todayhomecredits.com
           </div>
           <div>
-            <span className="text-gray-700 font-medium">Toll-Free:</span> 1800‑123‑4567
+            <span className="text-gray-700 font-medium">Toll-Free:</span> 9446576300
           </div>
         </div>
       </div>
