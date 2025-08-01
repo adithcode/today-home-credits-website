@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-in-out both;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+@layer utilities {
+  @keyframes gradientBG {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-gradient {
+    animation: gradientBG 20s ease infinite; /* Slower animation */
+    background-size: 400% 400%;
+    background-image: linear-gradient(
+      270deg,
+      #bfdbfe, /* blue-200 */
+      #93c5fd, /* blue-300 */
+      #60a5fa, /* blue-400 */
+      #3b82f6, /* blue-500 */
+      #2563eb, /* blue-600 */
+      #1d4ed8, /* blue-700 */
+      #2563eb,
+      #3b82f6,
+      #60a5fa,
+      #93c5fd,
+      #bfdbfe
+    );
+  }
+
+  @keyframes fadeSlide {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-slide {
+    animation: fadeSlide 1.2s ease-out both;
+  }
+}
